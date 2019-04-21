@@ -1,0 +1,24 @@
+{
+    "private": true,
+    "name": "test-travis",
+    "description": "",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "test": "mocha --sort"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^6.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:piecioshka/test-travis.git"
+    }
+}
