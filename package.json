@@ -10,12 +10,16 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "test": "mocha --sort"
+        "test": "mocha --sort",
+        "coverage": "nyc npm run test && nyc report --reporter=html",
+        "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
     },
     "dependencies": {},
     "devDependencies": {
         "chai": "^4.2.0",
-        "mocha": "^6.0.2"
+        "codecov": "^3.3.0",
+        "mocha": "^6.0.2",
+        "nyc": "^14.0.0"
     },
     "repository": {
         "type": "git",
